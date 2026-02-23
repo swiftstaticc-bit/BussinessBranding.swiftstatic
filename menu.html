@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Menu — Kumbhakarna MultiCuisine</title>
+<meta name="description" content="Explore Kumbhakarna's full menu — Biryani, South Indian, North Indian, Chinese and Beverages on NH-16, Kaza, Guntur."/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.mc-foot{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.mc-order{display:inline-flex;align-items:center;gap:.35rem;padding:.32rem .75rem;border-radius:50px;border:1.5px solid var(--accent);color:var(--accent);font-size:.74rem;font-weight:600;transition:background .2s,color .2s}
+.mc-order:hover{background:var(--accent);color:#060401}
+.price-row{display:flex;align-items:center;gap:.55rem}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="brand">Kumbhakarna <sub>MultiCuisine</sub></a>
+  <ul class="nav-list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="menu.html" class="nav-link">Menu</a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20reserve%20a%20table." class="btn-res" target="_blank" rel="noopener">Reserve Table</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mob-menu" hidden>
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="about.html" class="mob-link">About</a>
+  <a href="menu.html" class="mob-link">Menu</a>
+  <a href="gallery.html" class="mob-link">Gallery</a>
+  <a href="reviews.html" class="mob-link">Reviews</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order." class="mob-cta" target="_blank" rel="noopener">Order via WhatsApp</a>
+</div>
+
+<header class="page-hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=1400&auto=format&fit=crop&q=72')"></div>
+  <div class="hero-overlay"></div>
+  <div class="page-hero-content container">
+    <span class="section-label">Our Menu</span>
+    <h1>Crafted with<br><em style="font-style:italic;color:var(--accent)">Passion</em></h1>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-anim="up">
+      <p style="color:var(--muted);max-width:590px">From fragrant biryanis to crispy dosas and sizzling Chinese — every dish prepared fresh daily. Order via WhatsApp for quick pickup or dine in with us.</p>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar" role="tablist">
+      <button class="tab active" data-tab="all" role="tab" aria-selected="true" aria-controls="mp-all">All</button>
+      <button class="tab" data-tab="biryani" role="tab" aria-selected="false" aria-controls="mp-biryani">🍚 Biryani</button>
+      <button class="tab" data-tab="south" role="tab" aria-selected="false" aria-controls="mp-south">🥘 South Indian</button>
+      <button class="tab" data-tab="north" role="tab" aria-selected="false" aria-controls="mp-north">🍛 North Indian</button>
+      <button class="tab" data-tab="chinese" role="tab" aria-selected="false" aria-controls="mp-chinese">🥡 Chinese</button>
+      <button class="tab" data-tab="drinks" role="tab" aria-selected="false" aria-controls="mp-drinks">🥤 Beverages</button>
+    </div>
+
+    <!-- All / Featured -->
+    <div class="menu-panel active" id="mp-all" role="tabpanel">
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=560&auto=format&fit=crop&q=72" alt="Chicken Dum Biryani" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Chicken Dum Biryani</h3><p>Fragrant long-grain rice slow-cooked with tender chicken, whole spices and saffron.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹220</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Dum%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&auto=format&fit=crop&q=72" alt="Masala Dosa" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Masala Dosa</h3><p>Crispy golden dosa filled with spiced potato masala, served with sambar &amp; chutneys.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹80</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Masala%20Dosa" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=560&auto=format&fit=crop&q=72" alt="Butter Chicken" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Butter Chicken</h3><p>Succulent chicken in a rich, velvety tomato-cream gravy with aromatic butter spices.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹220</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Butter%20Chicken" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=560&auto=format&fit=crop&q=72" alt="Chicken Tikka Masala" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Chicken Tikka Masala</h3><p>Tender chicken tikka pieces simmered in a rich, spiced tomato-cream masala gravy.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹220</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Tikka%20Masala" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=560&auto=format&fit=crop&q=72" alt="Mutton Biryani" loading="lazy" width="560" height="178"/><span class="mc-badge bs">Signature</span></div>
+          <div class="mc-body"><h3>Mutton Biryani</h3><p>Tender mutton pieces layered with fragrant basmati rice, fried onions and fresh coriander.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹280</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Mutton%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=560&auto=format&fit=crop&q=72" alt="Dal Makhani" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Dal Makhani</h3><p>Slow-cooked black lentils with butter, cream and a signature smoky tempering.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Dal%20Makhani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=560&auto=format&fit=crop&q=72" alt="Chicken Momos" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Chicken Momos (8 pcs)</h3><p>Juicy steamed chicken dumplings served with spicy red chutney and a bowl of clear soup.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Momos" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=560&auto=format&fit=crop&q=72" alt="Masala Chai" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Masala Chai</h3><p>Classic Indian spiced tea with ginger, cardamom, cinnamon and cloves — the highway traveller's pick.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹30</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Masala%20Chai" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-all -->
+
+    <!-- Biryani -->
+    <div class="menu-panel" id="mp-biryani" role="tabpanel" hidden>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=560&auto=format&fit=crop&q=72" alt="Chicken Dum Biryani" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Chicken Dum Biryani</h3><p>Fragrant long-grain rice slow-cooked with tender chicken, whole spices and saffron.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹220</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Dum%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=560&auto=format&fit=crop&q=72" alt="Mutton Biryani" loading="lazy" width="560" height="178"/><span class="mc-badge bs">Signature</span></div>
+          <div class="mc-body"><h3>Mutton Biryani</h3><p>Tender mutton pieces layered with fragrant basmati rice, fried onions and fresh herbs.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹280</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Mutton%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=560&h=178&auto=format&fit=crop&q=72" alt="Veg Biryani" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Veg Biryani</h3><p>Seasonal vegetables and paneer cooked with aromatic basmati in a sealed dum pot.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Veg%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=560&auto=format&fit=crop&q=72" alt="Seafood Biryani" loading="lazy" width="560" height="178"/><span class="mc-badge bs">Signature</span></div>
+          <div class="mc-body"><h3>Seafood Biryani</h3><p>Juicy prawns and fish pieces marinated in coastal spices and slow-cooked with fragrant basmati rice.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹300</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Seafood%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=560&auto=format&fit=crop&q=72" alt="Egg Biryani" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Egg Biryani</h3><p>Boiled eggs cooked in masala and layered with fragrant basmati for a simple, fulfilling meal.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹180</span><span class="dot-ind nv" title="Contains Egg"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Egg%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=560&auto=format&fit=crop&q=72" alt="Paneer Biryani" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Paneer Biryani</h3><p>Soft paneer cubes marinated in spiced yoghurt and layered with aromatic basmati in a sealed dum pot.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹200</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Paneer%20Biryani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-biryani -->
+
+    <!-- South Indian -->
+    <div class="menu-panel" id="mp-south" role="tabpanel" hidden>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&auto=format&fit=crop&q=72" alt="Masala Dosa" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Masala Dosa</h3><p>Crispy golden dosa filled with spiced potato masala, served with sambar and 3 chutneys.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹80</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Masala%20Dosa" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&auto=format&fit=crop&q=72&crop=entropy" alt="Plain Dosa" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Plain Dosa</h3><p>Light, crispy fermented rice and lentil crepe served with sambar and fresh coconut chutney.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹60</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Plain%20Dosa" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=560&h=178&auto=format&fit=crop&q=72" alt="Sambar Bowl" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Sambar Bowl (Full)</h3><p>Piping-hot Andhra-style sambar with vegetables, tamarind and a roasted spice tempering. Best with idli or rice.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹60</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Sambar%20Bowl" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&h=178&auto=format&fit=crop&q=72&crop=bottom" alt="Pesarattu" loading="lazy" width="560" height="178"/><span class="mc-badge bs">Signature</span></div>
+          <div class="mc-body"><h3>Pesarattu</h3><p>Andhra-style crispy green moong dosa, served with ginger chutney — a regional speciality.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹70</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Pesarattu" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=560&h=178&auto=format&fit=crop&q=72" alt="Vada Curry" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Vada Curry</h3><p>Crispy urad dal vadas dunked in a thin, spiced onion-tomato curry — a South Indian street-food classic.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹75</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Vada%20Curry" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&h=178&auto=format&fit=crop&q=72&crop=top" alt="Uttapam" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Onion Uttapam</h3><p>Thick, soft rice pancake topped with caramelised onions and tomatoes, served with sambar.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹80</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Uttapam" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=560&h=178&auto=format&fit=crop&q=72&crop=top" alt="Ven Pongal" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Ven Pongal</h3><p>Comforting South Indian rice-lentil khichdi slow-cooked with ghee, pepper, cumin and cashews.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹60</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Ven%20Pongal" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=560&auto=format&fit=crop&q=72" alt="Butter Dosa" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Butter Dosa</h3><p>Golden-crisp dosa generously spread with fresh butter — a simple, indulgent pleasure.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹75</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Butter%20Dosa" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-south -->
+
+    <!-- North Indian -->
+    <div class="menu-panel" id="mp-north" role="tabpanel" hidden>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=560&auto=format&fit=crop&q=72" alt="Butter Chicken" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Butter Chicken</h3><p>Succulent chicken in a rich, velvety tomato-cream gravy with aromatic butter spices.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹220</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Butter%20Chicken" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=560&auto=format&fit=crop&q=72" alt="Dal Makhani" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Dal Makhani</h3><p>Slow-cooked black lentils with butter, cream and a signature smoky tempering. Best with naan.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Dal%20Makhani" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=560&auto=format&fit=crop&q=72" alt="Paneer Butter Masala" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Paneer Butter Masala</h3><p>Soft paneer cubes in a smooth, mildly spiced tomato-cashew gravy. A vegetarian classic.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹180</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Paneer%20Butter%20Masala" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=560&h=178&auto=format&fit=crop&q=72&crop=top" alt="Egg Masala" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Egg Masala</h3><p>Boiled eggs cooked in a robust onion-tomato masala with whole spices — best paired with roti or rice.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind nv" title="Contains Egg"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Egg%20Masala" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Mutton Masala" loading="lazy" width="560" height="178"/><span class="mc-badge bs">Signature</span></div>
+          <div class="mc-body"><h3>Mutton Masala</h3><p>Tender bone-in mutton slow-simmered in a rich, spiced tomato-onion masala gravy.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹260</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Mutton%20Masala" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=560&auto=format&fit=crop&q=72" alt="Tawa Chapati" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Tawa Chapati (2 pcs)</h3><p>Soft whole-wheat flatbread cooked fresh on a tawa — the perfect everyday companion with any curry.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹30</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Tawa%20Chapati" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Dal Fry" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Dal Fry</h3><p>Yellow toor dal tempered with mustard, cumin, garlic and green chillies — a wholesome comfort dish.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹120</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Dal%20Fry" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Plain Paratha" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Plain Paratha (2 pcs)</h3><p>Flaky, layered whole-wheat flatbread cooked on a griddle with a drizzle of ghee.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹35</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Plain%20Paratha" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-north -->
+
+    <!-- Chinese -->
+    <div class="menu-panel" id="mp-chinese" role="tabpanel" hidden>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=560&auto=format&fit=crop&q=72" alt="Chicken Momos" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Chicken Momos (8 pcs)</h3><p>Juicy steamed chicken dumplings served hot with a fiery red chutney and a bowl of clear broth.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹160</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Momos" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=560&auto=format&fit=crop&q=72" alt="Chicken Noodles" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Chicken Noodles</h3><p>Stir-fried egg noodles with shredded chicken, vegetables and a savoury Indo-Chinese sauce.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹180</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Chicken%20Noodles" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Schezwan Chicken" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Schezwan Chicken</h3><p>Tender chicken pieces tossed in a bold, fiery Schezwan sauce with garlic and whole red chillies.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹200</span><span class="dot-ind nv" title="Non-Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Schezwan%20Chicken" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=560&auto=format&fit=crop&q=72" alt="Veg Fried Rice" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Veg Fried Rice</h3><p>Wok-tossed rice with fresh seasonal vegetables, soy sauce and sesame oil.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹130</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Veg%20Fried%20Rice" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=560&auto=format&fit=crop&q=72" alt="Veg Noodles" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Veg Noodles</h3><p>Stir-fried egg noodles with crisp vegetables and a tangy Indo-Chinese seasoning.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹130</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Veg%20Noodles" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Veg Momos" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Veg Momos (8 pcs)</h3><p>Soft steamed vegetable dumplings filled with spiced cabbage, carrot and herbs — served with red chutney.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹130</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Veg%20Momos" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=560&auto=format&fit=crop&q=72" alt="Egg Fried Rice" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Egg Fried Rice</h3><p>Scrambled egg and vegetables tossed with fragrant rice and light seasoning.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹150</span><span class="dot-ind nv" title="Contains Egg"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Egg%20Fried%20Rice" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Schezwan Veg Noodles" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Schezwan Veg Noodles</h3><p>Stir-fried noodles with crisp vegetables tossed in a spicy, flavour-packed Schezwan sauce.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹150</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Schezwan%20Veg%20Noodles" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-chinese -->
+
+    <!-- Beverages -->
+    <div class="menu-panel" id="mp-drinks" role="tabpanel" hidden>
+      <div class="menu-grid">
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=560&auto=format&fit=crop&q=72" alt="Filter Coffee" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Filter Coffee</h3><p>Strong South Indian filter coffee decoction mixed with warm, frothy milk — a classic morning ritual.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹35</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Filter%20Coffee" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=560&auto=format&fit=crop&q=72" alt="Masala Chai" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Masala Chai</h3><p>Classic spiced milk tea brewed with ginger, cardamom and cinnamon — the highway traveller's favourite.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹30</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Masala%20Chai" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=560&h=178&auto=format&fit=crop&q=72&crop=entropy" alt="Lemon Tea" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Lemon Tea</h3><p>Hot brewed tea with a splash of fresh lemon juice and a hint of honey — light, tangy and refreshing.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹30</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Lemon%20Tea" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1482012792084-a0c3725f289f?w=560&auto=format&fit=crop&q=72" alt="Fresh Orange" loading="lazy" width="560" height="178"/><span class="mc-badge bp">Popular</span></div>
+          <div class="mc-body"><h3>Fresh Orange</h3><p>Freshly squeezed chilled orange juice — naturally sweet, pulpy and packed with Vitamin C.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹70</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Fresh%20Orange" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d1">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=560&auto=format&fit=crop&q=72" alt="Cool Drink" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Cool Drink (Pepsi / Thums Up)</h3><p>Ice-cold carbonated cola served in a chilled glass — the ultimate refresher on a hot afternoon.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹40</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Cool%20Drink" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+        <div class="menu-card" data-anim="up d2">
+          <div class="mc-img"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=560&auto=format&fit=crop&q=72" alt="Lemon Soda" loading="lazy" width="560" height="178"/></div>
+          <div class="mc-body"><h3>Fresh Lime Soda</h3><p>Freshly squeezed lime with sparkling soda — your choice of sweet, salted or masala. Perfectly zingy.</p>
+          <div class="mc-foot"><div class="price-row"><span class="price">₹55</span><span class="dot-ind veg" title="Vegetarian"></span></div><a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20Fresh%20Lime%20Soda" class="mc-order" target="_blank" rel="noopener">Order</a></div></div>
+        </div>
+
+      </div>
+    </div><!-- /mp-drinks -->
+  </div><!-- /container -->
+</section>
+
+<!-- ── CTA Banner ─────────────────────────────────────── -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-banner" data-anim="up">
+      <div>
+        <span class="section-label" style="margin-bottom:.5rem">Ready to Order?</span>
+        <h2>Ready to<br>Eat?</h2>
+        <p>Order directly via WhatsApp for quick service — or visit us dine-in on NH-16.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20place%20an%20order." class="btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a href="contact.html" class="btn-ghost">Visit Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">Kumbhakarna <sub>MultiCuisine</sub></a>
+      <p>Authentic flavours of South India, North India, Chinese and more. Serving families on NH-16, Kaza, Guntur since 2008.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://wa.me/919876543210?text=Hi!" target="_blank" rel="noopener">WhatsApp Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Visit Us</h4>
+      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>NH-16, Near Kaza Toll Plaza, Mangalagiri-Kaza, Guntur AP 522503</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.55a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Open daily 7 AM – 11 PM</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:kumbhakarna.kaza@gmail.com">kumbhakarna.kaza@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Kumbhakarna MultiCuisine. All rights reserved.</p>
+    <div class="footer-btns">
+      <a href="https://wa.me/919876543210?text=Hi!" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a href="tel:+919876543210">Call Us</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20place%20an%20order." class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-pulse"></span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
